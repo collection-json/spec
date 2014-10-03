@@ -285,7 +285,7 @@ The [items][] array MAY have a [links][] array child property.
 
 The [data][] array is a child property of the [items][] array and the [template][] object.
 
-The [data][] array SHOULD contain one or more anonymous objects. Each object is MAY have any of three possible properties: [name][] (REQUIRED), value (OPTIONAL), and prompt (OPTIONAL).
+The [data][] array SHOULD contain one or more anonymous objects. Each object MAY have any of three possible properties: [name][] (REQUIRED), value (OPTIONAL), and prompt (OPTIONAL).
 
 ```json
 // sample data array
