@@ -105,6 +105,8 @@ Content-Length: xxx
 { "collection" : { "href" : "...", "items" [ { "href" : "...", "data" : [...].} } }
 ```
 
+Note that the valid response is actually a complete [collection][] document that contains only one [item][] (and possibly related [queries][] and [template][] properties). 
+
 ##### 1.1.4 Updating an Item
 
 To update an existing resource, the client uses the [template][] object as a guide to composing a replacement [item][] representation and then uses HTTP PUT to send that representation to the server.
