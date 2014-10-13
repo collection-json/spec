@@ -166,7 +166,7 @@ For query templates, the name/value pairs of the [data][] array set are appended
 
 In the above example, if the user supplied "JSON" for the value property, the user agent would construct the following URI:
 
-http://example.org/search?search=JSON
+`http://example.org/search?search=JSON`
 
 ### 2. Objects
 
