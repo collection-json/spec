@@ -305,7 +305,7 @@ The [data][] array SHOULD contain one or more anonymous objects. Each object MAY
 }
 ```
 
-#### 3.2. queries
+#### 3.3. queries
 
 The queries array is an OPTIONAL top-level property of the [Collection+JSON][] document.
 
