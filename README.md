@@ -38,7 +38,7 @@ This section contains general concepts that apply to all [Collection+JSON][] doc
 
 The [Collection+JSON][] hypermedia type is designed to support full read/write capability for simple lists (contacts, tasks, blog entries, etc.). The standard application semantics supported by this media type include Create, Read, Update, and Delete (CRUD) along w/ support for predefined queries including query templates (similar to HTML "GET" forms). Write operations are defined using a [template][] object supplied by the server as part of the response representation.
 
-Each [item][] in a [Collection+JSON][] [collection][] has an assigned URI (via the [href][] property) and an optional array of one or more [data][] elements along with an optional array of one or more [link][] elements. Both arrays support a [name][] property for each object in the [collection][] in order to decorate these elements with domain-specific semantic information (e.g. "data" : [{"name" : "first-name", ...},...]).
+Each [item][] in a [Collection+JSON][] [collection][] has an assigned URI (via the [href][] property) and an optional array of one or more [data][] elements along with an optional array of one or more [link][] elements. Both arrays support a [name][] property for each object in the [collection][] in order to decorate these elements with domain-specific semantic information (e.g. `"data" : [{"name" : "first-name", ...},...]`).
 
 The [Collection+JSON][] hypermedia type has a limited set of predefined link relation values and supports additional values applied by implementors in order to better describe the application domain to which the media type is applied.
 
