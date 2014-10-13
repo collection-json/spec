@@ -52,7 +52,7 @@ This section describes the details of how clients can recognize and implement re
 
 ##### 1.1.1 Reading Collections
 
-To get a list of the [items][] in a collection, the client sends an HTTP GET request to the URI of a collection. a [Collection+JSON][] Document is returned which contains one or more [item][] objects in an array. The response may describe all, or only a partial list, of the [items][] in a collection.
+To get a list of the [items][] in a collection, the client sends an HTTP GET request to the URI of a collection. A [Collection+JSON][] Document is returned which contains one or more [item][] objects in an array. The response may describe all, or only a partial list, of the [items][] in a collection.
 
 ```
 *** REQUEST ***
