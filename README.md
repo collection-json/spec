@@ -182,13 +182,13 @@ The [collection][] object SHOULD have a version property. For this release, the 
 
 The [collection][] object SHOULD have an [href][] property. The [href][] property MUST contain a valid URI. This URI SHOULD represent the address used to retrieve a representation of the document. This URI MAY be used to add a new record (See Reading and Writing Data).
 
-The [collection][] object MAY have an [links][]  array child property.
+The [collection][] object MAY have a [links][]  array child property.
 
 The [collection][] object MAY have an [items][] array child property.
 
-The [collection][] object MAY have an queries array child property.
+The [collection][] object MAY have a queries array child property.
 
-The [collection][] object MAY have an [template][] object child property.
+The [collection][] object MAY have a [template][] object child property.
 
 The [collection][] object MAY have an error object child property.
 
