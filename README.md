@@ -416,7 +416,7 @@ It SHOULD be a STRING type.
 
 The value property MAY be a child element of [data][] array elements
 
-It MAY contain one of the following data types: STRING NUMBER truev false or null
+It MAY contain one of the following data types: STRING NUMBER true, false or null
 
 #### 4.10. version
 
