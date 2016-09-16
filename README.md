@@ -129,7 +129,7 @@ Content-Type: application/vnd.collection+json
 
 Clients can delete existing resources by sending an HTTP DELETE request to the URI of the [item][] resource.
 
-If the delete request is successful, the server SHOULD respond with an HTTP status code of 204.
+If the delete request is successful, the server SHOULD respond with an HTTP status code of 204. The server MAY respond with an updated [collection][] resource representation.
 
 ```
 *** REQUEST ***
