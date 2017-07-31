@@ -46,7 +46,7 @@ The following sections describe the process of reading and writing data using th
 
 #### 1.1 Reading and Writing Data
 
-The [Collection+JSON][] media type supports a limited form of read/write semantics; the Create-Read-Update-Delete (or CRUD) pattern. In addition to CRUD operations, the [Collection+JSON][] media type supports Query Templates.
+The [Collection+JSON][] media type supports a limited form of read/write semantics; the Create-Read-Update-Delete (or CRUD) pattern (where an Update operation means wholesale replacement, not partial modification). In addition to CRUD operations, the [Collection+JSON][] media type supports Query Templates.
 
 This section describes the details of how clients can recognize and implement reads and writes found within [Collection+JSON][] responses.
 
@@ -107,11 +107,11 @@ Content-Length: xxx
 
 Note that the valid response is actually a complete [collection][] document that contains only one [item][] (and possibly related [queries][] and [template][] properties). 
 
-##### 1.1.4 Updating an Item
+##### 1.1.4 Replacing an Item
 
-To update an existing resource, the client uses the [template][] object as a guide to composing a replacement [item][] representation and then uses HTTP PUT to send that representation to the server.
+To replace an existing resource, the client uses the [template][] object as a guide to composing a replacement [item][] representation and then uses HTTP PUT to send that representation to the server.
 
-If the update is successful, the server will respond with HTTP status code 200 and possibly a representation of the updated [item][] resource representation.
+If the replacement operation is successful, the server will respond with HTTP status code 200 and possibly a representation of the updated [item][] resource representation.
 
 ```
 *** REQUEST ***
@@ -228,7 +228,7 @@ The following elements MAY appear as child properties of the error object: code 
 
 #### 2.3 template
 
-The [template][] object contains all the input elements used to add or edit [collection][] "records." This is an OPTIONAL object and there MUST NOT be more than one [template][] object in a [Collection+JSON][] document. It is a top-level document property.
+The [template][] object contains all the input elements used to add or replace [collection][] "records." This is an OPTIONAL object and there MUST NOT be more than one [template][] object in a [Collection+JSON][] document. It is a top-level document property.
 
 The [template][] object SHOULD have a [data][] array child property.
 
